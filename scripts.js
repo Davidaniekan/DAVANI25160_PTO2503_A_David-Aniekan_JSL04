@@ -59,3 +59,23 @@ const taskStatusSelect = document.getElementById("task-status");
 const modalBackdrop = document.getElementById("modal-backdrop");
 const closeModalBtn = document.getElementById("close-modal");
 
+// Render tasks into their respective columns
+function renderTasks(tasks) {
+  tasks.forEach((task) => {
+    // Create task card
+    const taskElement = document.createElement("div");
+    taskElement.textContent = task.title;
+    taskElement.classList.add("taskCard");
+
+    // Append to correct column by status
+    const column = document.querySelector(`#${task.status} .tasks-container`);
+    if (column) {
+      column.appendChild(taskElement);
+    }
+
+    // When clicked → open modal with task details
+    taskElement.addEventListener("click", function () {
+      openModal(task);
+    });
+  });
+}
