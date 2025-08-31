@@ -99,3 +99,20 @@ closeModalBtn.addEventListener("click", function () {
 modalBackdrop.addEventListener("click", function (e) {
   if (e.target === modalBackdrop) modalBackdrop.style.display = "none";
 });
+
+// Add faded effect to dropdown options
+for (let option of taskStatusSelect.options) {
+  option.classList.add("faded");
+}
+
+// Highlight only the selected option
+taskStatusSelect.options[taskStatusSelect.selectedIndex].classList.remove("faded");
+
+// When user changes dropdown → update highlighting
+taskStatusSelect.addEventListener("change", function () {
+  for (let option of taskStatusSelect.options) {
+    option.classList.add("faded");
+  }
+  taskStatusSelect.options[taskStatusSelect.selectedIndex].classList.remove("faded");
+});
+
