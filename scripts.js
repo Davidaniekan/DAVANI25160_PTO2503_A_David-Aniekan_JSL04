@@ -116,3 +116,5 @@ taskStatusSelect.addEventListener("change", function () {
   taskStatusSelect.options[taskStatusSelect.selectedIndex].classList.remove("faded");
 });
 
+// Initial render of tasks
+renderTasks(initialTasks);
