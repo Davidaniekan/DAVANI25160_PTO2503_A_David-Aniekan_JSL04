@@ -51,3 +51,11 @@ const initialTasks = [
     status: "todo",
   },
 ];
+
+// Grab modal elements from DOM
+const taskTitleInput = document.getElementById("task-title");
+const taskDescriptionInput = document.getElementById("task-description");
+const taskStatusSelect = document.getElementById("task-status");
+const modalBackdrop = document.getElementById("modal-backdrop");
+const closeModalBtn = document.getElementById("close-modal");
+
