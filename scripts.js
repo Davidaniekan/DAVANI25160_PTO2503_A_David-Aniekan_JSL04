@@ -79,3 +79,13 @@ function renderTasks(tasks) {
     });
   });
 }
+
+// Open modal with a given task’s data
+function openModal(task) {
+  taskTitleInput.value = task.title;
+  taskDescriptionInput.value = task.description;
+  taskStatusSelect.value = task.status;
+
+  // show modal
+  modalBackdrop.style.display = "flex";
+}
