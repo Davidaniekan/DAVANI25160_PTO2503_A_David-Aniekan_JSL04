@@ -31,3 +31,107 @@ html, body {
     width: 100%;
     flex-grow: 1;
 }
+
+/* Sidebar logo and boards */
+.logo {
+    margin-bottom: 1.25rem;
+    padding: 1.875rem 0 0 1.875rem;
+}
+
+.logo-icon {
+    width: 75%;
+    cursor: pointer;
+}
+
+.board h4 {
+    margin-bottom: .9375rem;
+    padding-left: 2rem; 
+}
+
+h4 {
+    color: #828FA3;
+    font-weight: bold;
+    font-size: .75rem;
+    line-height: .9375rem;
+    letter-spacing: .15rem;
+}
+
+.board-btn {
+    display: block;
+    background-color: #635FC7;
+    line-height: 100%;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: .9375rem;
+    width: 90%;
+    height: 3rem;
+    border-bottom-right-radius: 6.25rem;
+    border-top-right-radius: 6.25rem;
+    border: none;
+    cursor: pointer;
+}
+
+.board-btn:hover {
+    background-color: #A8A4FF;
+}
+
+/* Header and board list */
+header {
+    background-color: #FFFFFF;
+    color: #000112;
+    padding: 2.125rem 1.25rem 1.25rem 1.25rem;
+    font-size: 1.125rem;
+    line-height: 1.4375rem;
+    border-bottom: 2px solid #E4EBFA;
+}
+
+.board-list {
+    display: flex;
+    gap: .9375rem;
+    cursor: pointer;
+}
+
+.dropdown-arrow {
+    display: none;
+}
+
+/* Columns section */
+.columns {
+    padding: 1.25rem;
+}
+
+main {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 85%;
+}
+
+.column {
+    flex: 1;
+    min-width: 17.5rem;
+}
+
+.column h4 {
+    display: flex;
+    margin-bottom: .9375rem;
+    gap: 10px;
+}
+
+.dot {
+    height: .9375rem;
+    width: .9375rem;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.indigo {
+    background-color: #49C4E5;
+}
+.purple {
+    background-color: #8471F2;
+}
+.green{
+    background-color: #67E2AE;
+}
