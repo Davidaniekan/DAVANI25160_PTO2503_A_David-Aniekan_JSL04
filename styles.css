@@ -221,3 +221,7 @@ main {
 #task-status {
     cursor: pointer;
 }
+
+.faded {
+    color: #828FA3;
+}
