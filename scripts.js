@@ -89,3 +89,13 @@ function openModal(task) {
   // show modal
   modalBackdrop.style.display = "flex";
 }
+
+// Close modal with "X" button
+closeModalBtn.addEventListener("click", function () {
+  modalBackdrop.style.display = "none";
+});
+
+// Close modal when clicking backdrop (outside modal box)
+modalBackdrop.addEventListener("click", function (e) {
+  if (e.target === modalBackdrop) modalBackdrop.style.display = "none";
+});
